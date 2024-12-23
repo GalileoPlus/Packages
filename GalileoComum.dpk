@@ -28,6 +28,18 @@ package GalileoComum;
 {$IMPLICITBUILD ON}
 
 requires
-  rtl;
+  rtl,
+  dbrtl,
+  fmx,
+  FireDAC,
+  FireDACCommonDriver,
+  FireDACCommon,
+  FireDACIBDriver,
+  fmxFireDAC;
+
+contains
+  Constants in 'src\Constants.pas',
+  fbConnection in 'src\fbConnection.pas',
+  Loggers in 'src\Loggers.pas';
 
 end.
